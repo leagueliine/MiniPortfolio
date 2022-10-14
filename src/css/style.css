@@ -107,6 +107,7 @@ body {
   scroll-behavior: smooth;
 }
 
+
 .info-abas .descricao::-webkit-scrollbar {
   width: 5px;
   border: blueviolet;
@@ -122,6 +123,26 @@ body {
 
 .info-abas .descricao span {
   color: #02b08f;
+}
+
+
+.info-abas .descricao .spanTitulo::after {
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: coding .7s infinite;
+}
+
+@keyframes coding {
+
+  0%,
+  100% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
 .midias-sociais {
