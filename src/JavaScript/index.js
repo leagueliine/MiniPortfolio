@@ -2,6 +2,16 @@
  let conteudo = document.getElementsByClassName('info');
  let texto = document.getElementById('spanTitulo');
 
+let typeWriter = function (elemento) {
+  const textArray = elemento.innerHTML.split('');
+  elemento.innerHTML = '';
+  textArray.forEach((letra, i) => {
+    setTimeout( () => elemento.innerHTML += letra, 60 * i)
+  });
+ };
+
+ typeWriter(texto)
+
   let selectSession0 = function(){
     aba[1].classList.add('selecionada')
     conteudo[1].classList.add('selecionada')
@@ -32,13 +42,4 @@
     selectSession1();
   });
  
-let typeWriter = function (elemento) {
-  const textArray = elemento.innerHTML.split('');
-  elemento.innerHTML = '';
-  textArray.forEach((letra, i) => {
-    setTimeout( () => elemento.innerHTML += letra, 60 * i)
-  });
- };
 
- typeWriter(texto)
- 
