@@ -1,3 +1,3 @@
 #CarminhosDev
 
-Mais um projeto finalizado em rumo ao sonhado dev Junior.
+Mais um projeto finalizado em prol de um conhecimento cada vez mais sólido!
