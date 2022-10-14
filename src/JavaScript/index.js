@@ -6,7 +6,7 @@ let typeWriter = function (elemento) {
   const textArray = elemento.innerHTML.split('');
   elemento.innerHTML = '';
   textArray.forEach((letra, i) => {
-    setTimeout( () => elemento.innerHTML += letra, 60 * i)
+    setTimeout( () => elemento.innerHTML += letra, 55 * i)
   });
  };
 
