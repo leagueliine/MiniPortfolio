@@ -1,7 +1,6 @@
  let aba = document.getElementsByClassName('aba');
- console.log(aba)
  let conteudo = document.getElementsByClassName('info');
- console.log(conteudo)
+ let texto = document.getElementById('spanTitulo');
 
   let selectSession0 = function(){
     aba[1].classList.add('selecionada')
@@ -33,28 +32,13 @@
     selectSession1();
   });
  
- /* const aba = document.getElementsByClassName('aba');
-  console.log(aba)
+let typeWriter = function (elemento) {
+  const textArray = elemento.innerHTML.split('');
+  elemento.innerHTML = '';
+  textArray.forEach((letra, i) => {
+    setTimeout( () => elemento.innerHTML += letra, 75 * i)
+  });
+ };
 
-  const conteudo = document.getElementsByClassName('info')
-  console.log(conteudo)
-
-  //aba[1].onclick = () => conteudo[0].classList.remove("selecionada") || conteudo[1].classList.add("selecionada");
-  aba[1].onclick = () => aba[0].classList.remove("selecionada") || aba[1].classList.add("selecionada");
-
-
-  aba[1].onclick = () => { 
-    aba[1].classList.add("selecionada");
-  if(aba){
-    aba[0].classList.contains('selecionada')
-    aba[0].classList.remove('selecionada')
-  }};
-
-    aba[0].onclick = () => { 
-      aba[0].classList.add("selecionada");
-    if(aba){
-      aba[1].classList.contains('selecionada')
-      aba[1].classList.remove('selecionada')
-    };
-  };
-*/
+ typeWriter(texto)
+ 
