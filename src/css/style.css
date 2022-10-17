@@ -125,6 +125,10 @@ body {
   color: #02b08f;
 }
 
+.info-abas .descricao .spanTitulo p{
+color: #FFFF00
+}
+
 
 .info-abas .descricao .spanTitulo::after {
   content: '|';
